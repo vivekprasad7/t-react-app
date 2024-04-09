@@ -7,11 +7,11 @@ export const Filter = () => {
     const [ searchInput, setSearchInput] = useState("")
 
     const tempColors = [
-        "#FF5733", // Reddish-orange
-        "#2E86C1", // Blueish
-        "#4CAF50", // Green
-        "#FFC300", // Yellow
-        "#9B59B6"  // Purple
+        "#FF5733", 
+        "#2E86C1", 
+        "#4CAF50", 
+        "#FFC300", 
+        "#9B59B6"  
       ];
       
 
@@ -30,14 +30,7 @@ export const Filter = () => {
                     <h3 className="filter-title">Filter By: </h3>
         </div>
 
-        {/* <div className="nav">
-            <div>
-
-            </div>
-            <div>
-                <button>Filter</button>
-            </div>
-        </div> */}
+     
         <div className="filter-box">
             <div className="color-box">
 
@@ -57,12 +50,8 @@ export const Filter = () => {
             key={index + item}
             className="color-picker"
             onClick={() => dispatch({type:"FILTER_BY_COLOR", payload: item?.color})}
-            // onClick={() => setUserInput({ ...userInput, color: item })}
-            // className={`color-picker ${
-            //   userInput?.color === item ? "selected-color" : ""
-            // }`}
             style={{ backgroundColor: item?.color }}
-            // role="button"
+            role="button"
           >
             {/* {userInput?.color === item && <span>✔</span>} */}
           </div>

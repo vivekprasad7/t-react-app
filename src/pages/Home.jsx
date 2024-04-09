@@ -73,13 +73,12 @@ export const Home = () => {
 
             }} >
 
-{
+                  {
                         drawerOpen ? 
                         <Close onClick={isDrawerClose} className="drawer-close-icon"/>
                         : 
                         ""
                     }
-                {/* <Close onClick={isDrawerClose} className="drawer-close-icon"/> */}
                 <AddCreativeForm isClose={isDrawerClose} />
             </div>
         </>
