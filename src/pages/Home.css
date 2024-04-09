@@ -1,0 +1,79 @@
+.drawer-close-icon{
+    position: absolute;
+    top:20px;
+    right:20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: aliceblue;
+    padding:5px;
+}
+
+.clear-filter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:2rem;
+    margin: 2rem 2rem;
+}
+
+.left-drawer{
+    display: flex;
+    flex-direction: column ;
+    min-height: 100vh;
+}
+
+.right-drawer{
+    position:fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    height:100vh;
+
+   
+}
+
+
+.scrollbox{
+    overflow:auto;
+}
+
+.scrollbox-inner p {
+    font-size:16px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #000;
+}
+
+.btn{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px #3f3f46;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.add-btn{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 2px #3f3f46;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.add-btn-container{
+    position: fixed;
+    bottom:20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
