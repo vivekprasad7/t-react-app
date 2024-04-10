@@ -13,8 +13,7 @@ export const AddCreativeForm = ({isClose}) => {
   };
 
   const [userInput, setUserInput] = useState(initialData);
-//   const [cardData, setCardData] = useState({});
-//   console.log("Card", cardData);
+
 
   const [colors, setColors] = useState({});
 
@@ -45,14 +44,15 @@ export const AddCreativeForm = ({isClose}) => {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line
     fetchColors();
   }, [state]);
 
   return (
     <form onSubmit={(e) => e.preventDefault()}>
       <h3>Add Creative</h3>
-      <div>
-        <label>
+      <div className="form-inputs">
+        <label >
           Title :
           </label>
           <div className="add-input">
@@ -67,7 +67,7 @@ export const AddCreativeForm = ({isClose}) => {
           </div>
         
       </div>
-      <div>
+      <div className="form-inputs">
         <label>
           Subtitle: 
           </label>
@@ -85,8 +85,8 @@ export const AddCreativeForm = ({isClose}) => {
 
 </div>
        
-      </div>
-      <div className="color-grid">
+      </div >
+      <div className="color-grid form-inputs">
         <label htmlFor="color-picker">Color:</label>
         {colors?.colors?.map((item, index) => (
           <div

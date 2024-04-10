@@ -1,3 +1,10 @@
+form {
+  text-align: center;
+}
+.form-inputs{
+  margin:auto;
+  text-align: center;
+}
 
 .selected-color{
     border: solid 2px slategray;

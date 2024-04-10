@@ -5,10 +5,11 @@ import { Card } from "../components/card/Card.jsx";
 import "./Home.css"
 import { Filter } from "../components/filter/Filter";
 import { Close } from "@mui/icons-material";
+import { ProgressBar } from "../components/stepsBar/progressBar";
 
 
 export const Home = () => {
-    const { state, dispatch, newCards, getFilteredCards } = useAppContext();
+    const { state, dispatch, newCards } = useAppContext();
     const [drawerOpen, setDrawerOpen] = useState(false);
     const isDrawerOpen = () => setDrawerOpen(true);
     const isDrawerClose = () => setDrawerOpen(false);
@@ -18,8 +19,8 @@ export const Home = () => {
     }
 
     return (
-        <>
-            <div style={{ width: !drawerOpen ? "100%" : "65%" }} >
+        <div className="home">
+            <div className="left-drawer" style={{ width: !drawerOpen ? "100%" : "65%" }} >
 
 
 
@@ -34,7 +35,12 @@ export const Home = () => {
                         drawerOpen ? 
                         <button className="add-btn"  disabled onClick={isDrawerOpen}>Add Creative</button> : 
                         <button className="add-btn"  onClick={isDrawerOpen}>Add Creative</button>
-                    }                </div>
+                    }                
+                </div>
+
+                <div>
+                    <ProgressBar/>
+                </div>
 
             
 
@@ -50,7 +56,7 @@ export const Home = () => {
 
                     </div>
 
-                    <div className="add-btn-container" >
+                <div className="add-btn-container" >
                     {
                         drawerOpen ? 
                         <button className="add-btn"  disabled onClick={isDrawerOpen}>Add Creative</button> : 
@@ -81,6 +87,6 @@ export const Home = () => {
                     }
                 <AddCreativeForm isClose={isDrawerClose} />
             </div>
-        </>
+        </div>
     );
 };

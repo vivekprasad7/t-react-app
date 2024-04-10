@@ -1,0 +1,30 @@
+.progress-section{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.progress-bar{
+    margin:0 2rem;
+    width:500px;
+    height:4px;
+    background-color: #fff;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px
+    
+   
+}
+
+.progress{
+    width:80%;
+    height: 100%;
+    background-color: greenyellow;
+    transition: 0.2s ease;
+}
+
+.progress-length{
+    width: 200px;
+}

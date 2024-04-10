@@ -80,3 +80,15 @@
     outline:none;
     width: 300px;
   }
+
+  @media (width < 768px){
+
+    .filter-box{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    
+  }
